@@ -1,6 +1,6 @@
 import { defineComponent } from "vue";
 
-import './theme';
+import './theme/index.scss';
 
 export default defineComponent({
   name: 'App',
