@@ -4,7 +4,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vuedx-typecheck . && vite build",
-    "lint:eslint": "eslint --fix --ext \"src/**/*.{vue,less,css,scss}\""
+    "ls-lint": "npx ls-lint",
+    "lint:eslint": "eslint --fix --ext \"src/**/*.{vue,less,css,scss}\"",
+    "lint:prettier": "prettier --write --loglevel warn \"src/**/*.{js,json,tsx,css,less,scss,vue,html,md}\"",
+    "lint:stylelint": "stylelint --fix \"**/*.{vue,less,postcss,css,scss}\" --cache --cache-location node_modules/.cache/stylelint/"
   },
   "dependencies": {
     "eslint-config-prettier": "^7.1.0",
