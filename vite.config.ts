@@ -1,6 +1,13 @@
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
+import vueJsx from '@vitejs/plugin-vue-jsx';
 
-export default defineConfig({
-  plugins: [vue()],
+const vueConfig = defineConfig({
+  plugins: [vue(), vueJsx()],
 });
+
+const config = {
+  ...vueConfig,
+};
+
+export default config;
