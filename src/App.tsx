@@ -1,7 +1,5 @@
 import { defineComponent } from 'vue';
 
-import './theme/index.scss';
-
 export default defineComponent({
   name: 'App',
   setup() {

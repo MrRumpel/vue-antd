@@ -1,4 +1,11 @@
 import { createApp } from 'vue';
 import App from './App';
+import setupAntd from './setup/ant-design-vue';
 
-createApp(App).mount('#app');
+const app = createApp(App);
+
+// Configure component library
+setupAntd(app);
+
+// Multilingual configuration
+// setupI18n(app);
